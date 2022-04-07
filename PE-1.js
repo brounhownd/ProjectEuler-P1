@@ -7,6 +7,37 @@
 //twitter @brownhound
 
 let cap = 1000;
-let divThrees = [];
-let divFives = [];
+let divThrees = 0;
+let divFives = 0;
+let divBoth = 0;
 
+//looping modulo on threes, if no remainder, add it to the stack
+for(let i = 3; i < cap; i++){
+    if(i % 3 == 0){
+        divThrees = divThrees + i;
+    }
+    console.log(divThrees);
+}
+
+//looping modulo on fives, if no remainder add it to the stack
+for(let i = 5; i < cap; i++){
+    if(i % 5 == 0){
+        divFives = divFives + i;
+    }
+    console.log(divFives);
+}
+
+//find the doubles and remove
+for(let i = 3; i < cap; i++){
+    if(i % 3 == 0 && i % 5 == 0){
+        divBoth = divBoth + i;
+    }
+    console.log(divBoth);
+}
+
+
+console.log(divThrees + divFives - divBoth);
+
+//learning notes
+//note 1--read closely, LESS than 1000, cap at 999
+//note 2--account for numbers that are both (i.e. 15, div by 5 and 3)
