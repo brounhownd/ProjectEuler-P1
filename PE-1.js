@@ -16,7 +16,6 @@ for(let i = 3; i < cap; i++){
     if(i % 3 == 0){
         divThrees = divThrees + i;
     }
-    console.log(divThrees);
 }
 
 //looping modulo on fives, if no remainder add it to the stack
@@ -24,7 +23,6 @@ for(let i = 5; i < cap; i++){
     if(i % 5 == 0){
         divFives = divFives + i;
     }
-    console.log(divFives);
 }
 
 //find the doubles and remove
@@ -32,7 +30,6 @@ for(let i = 3; i < cap; i++){
     if(i % 3 == 0 && i % 5 == 0){
         divBoth = divBoth + i;
     }
-    console.log(divBoth);
 }
 
 
