@@ -1,4 +1,4 @@
-# ProjectEuler-P1
+# ProjectEuler
 
 Code used to find the solution to Project Euler Problems
 
